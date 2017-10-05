@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quantrade</title>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="{% static "redir/assets/css/bootstrap.css" %}" rel="stylesheet">
+	  <link href="{% static "redir/assets/css/bootstrap-theme.css" %}" rel="stylesheet">
+	  <link href="{% static "redir/assets/css/font-awesome.css" %}" rel="stylesheet">
+
+    <!-- siimple style -->
+    <link href="{% static "redir/assets/css/style.css" %}" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+	<div id="wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Ooops...</h1>
+					<h2 class="subtitle">I had closed this website. You can find me now <a href="https://quantrade.co.uk/">here, at Quantrade quntitative trading signals</a>.</h2>
+					  <div class="form-group">
+					  <a href="https://quantrade.co.uk"><button class="btn btn-theme">Go there</button></a>
+                    <div class="social">
+                        <a href="https://www.facebook.com/quantrade/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                         <a href="https://twitter.com/QuantradeLtd"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                         <a href="https://plus.google.com/+TadasTalaikis"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                         <a href="https://www.linkedin.com/company/17904411/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.countdown.min.js"></script>
+	<script type="text/javascript">
+      $('#countdown').countdown('2017/01/01', function(event) {
+        $(this).html(event.strftime('%w weeks %d days <br /> %H:%M:%S'));
+      });
+    </script>
+
+</body>
+</html>
